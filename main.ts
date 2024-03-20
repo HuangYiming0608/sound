@@ -6,7 +6,7 @@ input.onButtonPressed(Button.B, function () {
     record.playAudio(record.BlockingState.Blocking)
 })
 basic.forever(function () {
-    if (input.soundLevel() > 255) {
+    if (input.soundLevel() == 255) {
         basic.showLeds(`
             # # # # #
             # # # # #
