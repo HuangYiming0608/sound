@@ -1,1 +1,19 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="q^=f5nYzxS2-h{jF)sM~" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="record_startRecording" id="*.;*6cV7N5;{`o12^XxK"><field name="mode">record.BlockingState.Blocking</field></block></statement></block><block type="device_button_event" id="@VZbVP/Avu%e,:VmgAZb" x="318" y="32"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="synth_set_volume" id="eRD^Me]8CKu+Z5@7e_/a"><value name="volume"><shadow type="math_number_minmax" id=")a{?PH-vDV,FJwcF`Nn("><mutation min="0" max="255" label="Volume" precision="0"></mutation><field name="SLIDER">255</field></shadow></value><next><block type="record_playAudio" id="F8}K7%;a)Jpas:JVFMA}"><field name="mode">record.BlockingState.Blocking</field></block></next></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="q^=f5nYzxS2-h{jF)sM~" x="-249" y="-234"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="record_startRecording" id="*.;*6cV7N5;{`o12^XxK"><field name="mode">record.BlockingState.Blocking</field></block></statement></block><block type="device_button_event" id="@VZbVP/Avu%e,:VmgAZb" x="105" y="-206"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="synth_set_volume" id="eRD^Me]8CKu+Z5@7e_/a"><value name="volume"><shadow type="math_number_minmax" id=")a{?PH-vDV,FJwcF`Nn("><mutation min="0" max="255" label="Volume" precision="0"></mutation><field name="SLIDER">255</field></shadow></value><next><block type="record_playAudio" id="F8}K7%;a)Jpas:JVFMA}"><field name="mode">record.BlockingState.Blocking</field></block></next></block></statement></block><block type="device_forever" id="W_^D!t8ia-9+YI%qE:.t" x="414" y="-100"><statement name="HANDLER"><block type="controls_if" id="+1;|L8fIwr%d2u*vtIu4"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="w`(eGu-5`1(=Vb,LKU(M"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="Qi$)g[RqP(Gw-Nim?Acm"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="OoPXvze[T6f$t7[Q]ggc" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_sound_level" id="];y5p:RkG*epGPlgeKxW"></block></value><value name="B"><shadow type="math_number" id="s~wA5eKP)qw@.w4TMN!e"><field name="NUM">255</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="|E[u.TLQ/;FllQx`~%%."><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></statement><value name="IF1"><block type="logic_compare" id="RF3~@$FwHG{Q@CJhb}BO"><field name="OP">GT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_sound_level" id="O1J_*kSC(:R*@~wsz[LL"></block></value><value name="B"><shadow type="math_number" id="!fy457Q$~5!DrcyWv1+1"><field name="NUM">127</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id=")=IZSNmtDAueXztxU!V_"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # # # # #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="ZjJ)u+Gd49vZc8i+![Ps"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block></statement></block></xml>
